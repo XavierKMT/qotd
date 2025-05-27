@@ -21,9 +21,9 @@ function MCAnswer({ answer, handleCorrect, doneToday, mcAnswers }) {
         <button 
           key={option}
           onClick={() => handleSubmit(option)}
-          className="mcBtn"
+          // className="mcBtn"
+          className={`mcBtn ${doneToday ? option === answer ? 'correct' : 'incorrect' : ''}`}
           disabled={doneToday}
-          // style={{ backgroundColor: }}
         >
           {option}
         </button>

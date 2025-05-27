@@ -10,6 +10,23 @@
   text-align: center;
   color: white;
   padding: 5px;
+  display: flex;
+}
+
+.date {
+  align-content: center;
+  flex: 1;
+}
+
+.question-icon {
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  margin: 5px;
 }
 
 .body {
@@ -24,6 +41,8 @@
 
 .footer {
   background-color: green;
+  text-align: center;
+  padding: 5px 0;
 }
 
 .answerSection {
@@ -42,6 +61,14 @@
   border: none;
   padding: 7px;
   margin: 3px 0;
+}
+
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: darkred;
 }
 
 @media (max-width: 576px) {
